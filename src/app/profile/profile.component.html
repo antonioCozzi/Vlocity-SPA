@@ -1,0 +1,36 @@
+<div class="container-fluid contact">
+  <div class="row">
+    <img src="{{ img }}" alt="" class="col-md-4 contact-pic">
+    <div class="col-md-8">
+      <p class="row contact-name">{{ name }}</p>
+      <button class="contact-button" (click)='onClick()'>Send message</button>
+      <div class="row">
+        <app-hearts></app-hearts>
+      </div>
+    </div>
+  </div>
+  <div class="row contact-description">{{ description }}</div>
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <th *ngFor="let col of columns" class="th">
+          {{ col }}
+        </th>
+      </thead>
+
+      <tbody>
+        <td class="likes">
+          <tr *ngFor='let like of likes'>
+            {{ like }}
+          </tr>
+        </td>
+
+        <td class="dislikes">
+          <tr *ngFor='let dislike of dislikes'>
+            {{ dislike }}
+          </tr>
+        </td>
+      </tbody>
+    </table>
+  </div>
+</div>

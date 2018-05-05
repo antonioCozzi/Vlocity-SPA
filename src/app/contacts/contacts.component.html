@@ -1,0 +1,13 @@
+<div class="container-fluid contact-list">
+  <p class="title">
+    Contacts
+  </p>
+  <ul *ngIf="peopleService.filteredPeople" class="container-fluid">
+    <li *ngFor="let person of peopleService.filteredPeople" 
+      class="row contact" 
+      [routerLink]="['/profile', peopleService.people.indexOf(person)]">
+      <img src="{{ person.img }}" alt="" class="col-md-3 small-profile-pic">
+      <p class="col-md-9 name">{{ person.name }}</p>
+    </li>
+  </ul>
+</div>

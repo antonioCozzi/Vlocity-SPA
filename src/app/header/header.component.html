@@ -1,0 +1,13 @@
+<div class="container-fluid header">
+  <div class="row">
+    <div class="col-md-4">
+      <i class="fa fa-search col-md-2"></i>
+      <input class="col-md-10 search-bar" type="text" (input)="filterPeople($event.target.value)" placeholder="Search" />
+    </div>
+    <div class="col-md-offset-4 col-md-4 username">
+      <i class="fa fa-user col-md-2"></i>
+      <p class="col-md-8 logged-user">Username</p>
+      <i class="fa fa-chevron-down col-md-2"></i>
+    </div>
+  </div>
+</div>

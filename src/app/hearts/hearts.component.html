@@ -1,0 +1,5 @@
+<span>
+    <ng-container>
+      <i *ngFor='let n of range; let $index = index;' class="fa fa-heart rating" [ngClass]='isMarked($index)' ></i>
+    </ng-container>
+</span>

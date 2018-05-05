@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.contact-list {
+     background: darken($color: $aqua, $amount: 4);     
+     border-bottom: 0.3em solid darken($color: $aqua, $amount: 8);
+     padding: 1em;
+     border-radius: 5px;
+
+     ul {
+          list-style: none;
+     }
+}
+
+.title {
+     font-size: $font-bigger;
+     color: white;
+}
+
+.contact {
+     background: lighten($color: $aqua, $amount: 10);
+     border-bottom: 0.3em solid $aqua;
+     padding: 1em;
+     margin-bottom: $font-small;
+     border-radius: 5px;
+
+     .small-profile-pic {
+          border-radius: 50%;
+          width: 20%;
+     }
+
+     .name {
+          font-size: $font-big;
+          color: white;
+     }
+}

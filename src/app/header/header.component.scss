@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+i {
+  font-size: $font-big;
+}
+
+.logged-user {
+  font-size: 1.6rem;
+}
+
+.search-bar {
+  border-radius: 15px;
+  font-size: $font-big;
+}
+
+.header {
+  margin: 1.2rem;
+}
+
+.username {
+  border-bottom: 0.5rem solid $orange;
+  padding: $font-small;
+}

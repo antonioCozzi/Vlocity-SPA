@@ -1,0 +1,53 @@
+@import '../../variables.scss';
+.contact {
+  background: lighten($color: $orange, $amount: 25);
+  border-bottom: 0.5rem solid $orange;
+  border-radius: 5px;
+  padding: $font-big;
+  .contact-pic {
+    border-radius: 50%;
+  }
+  .contact-name {
+    font-size: $font-bigger;
+  }
+  .contact-button {
+    border: none;
+    padding: $font-small $font-big;
+    border-radius: 25px;
+    border-bottom: 0.5rem solid darken($color: $orange, $amount: 10);
+    font-size: $font-big;
+    color: white;
+    background-color: $orange;
+
+    &:hover {
+      border-bottom: 0.5rem solid lighten($color: $orange, $amount: 10);
+      color: darken($color: white, $amount: 10);
+      background-color: darken($color: $orange, $amount: 10);;
+    }
+  }
+
+  .contact-description {
+    font-size: $font-big;
+    margin: $font-big;
+  }
+  app-hearts {
+    padding: $font-big;
+  }
+
+  .th {
+    font-size: $font-big;
+    background: $aqua;
+  }
+
+  tr {
+    border-bottom: 1px solid $aqua;
+  }
+
+  .likes {
+    background: lighten($color: green, $amount: 50)
+  }
+
+  .dislikes {
+    background: lighten($color: red, $amount: 30);
+  }
+}
