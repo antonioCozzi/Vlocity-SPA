@@ -22,6 +22,7 @@
         "styles.scss"
       ],
       "scripts": [],
+      "postinstall": "ng build --aot -prod",
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
